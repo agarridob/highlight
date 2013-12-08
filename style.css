@@ -1,0 +1,93 @@
+/**
+ * Highlighting an image.
+ * Author (c): Alberto Garrido 2013
+ * style.css
+ */
+body {
+    -webkit-transition: background-color 1s;
+	transition: background-color 1s;	
+}
+a:link, a:hover, a:visited, a:active {
+	color: #000;
+	text-decoration: none;
+}
+#wrap {
+	width: 100%;
+	text-align: center;
+}
+h2 {
+	font-family: 'Source Sans Pro', Helvetica, Arial, sans-serif;
+	font-size: 30px;
+	font-weight: 300;
+	}
+	h2::selection {
+		background-color: #c40000;
+		color: #FFF;
+	}
+#description {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100px;
+}
+#demo {
+	position: absolute;
+	left:0;
+	top: 100px;
+	width:100%;
+}
+#container {
+	width: 250px;
+	height: 250px;
+	-webkit-transition: all 1s;
+	transition: all 1s;
+	overflow: hidden;
+	border-radius: 50%;
+	margin: 0 auto;
+	-webkit-transition: width 500ms, height 1s, border-radius 100ms;
+	transition: width 500ms, height 1s, border-radius 100ms;	
+	}
+	.highlight {
+		margin: 0;
+		}
+		.highlight img {
+			height: 250px;
+			-webkit-transition: height 500ms;
+			transition: height 500ms;		
+}
+.close {
+	position: absolute;
+	top: 10px;
+	right: 20px;
+	width: 24px;
+	visibility: hidden;
+	}
+	.close:hover {
+		cursor: pointer;
+}
+#created {
+	position: absolute;
+	top: 370px;
+	width: 100%;
+	text-align: center;
+	visibility: visible;
+	font-family: 'Source Sans Pro', Helvetica, Arial, sans-serif;
+	font-size: 22px;
+	font-weight: 300;
+}
+#back {
+	font-family: 'Source Sans Pro', Helvetica, Arial, sans-serif;
+	text-align: left;
+	position: absolute;
+	bottom: 10px;
+	left: 30px;
+	font-size: 15px;
+	}
+	#back img {
+     	padding: 0;
+        -moz-transform: scaleY(-1);
+        -o-transform: scaleY(-1);
+        -webkit-transform: scaleY(-1);
+        transform: scaleY(-1);
+	}
